@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Para tv_titulo y tv_inicio -->
+    <style name="TextoTitulo">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:lineHeight">32sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <!-- Para et_correo y et_contrasena -->
+    <style name="TextoInput">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <!-- Para btn_entrar -->
+    <style name="TextoBotonPrimario">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:textColor">@color/on_primary</item>
+    </style>
+
+    <!-- Para btn_google -->
+    <style name="TextoBotonSecundario">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <!-- Para tv_terminos, btn_olvido y btn_registro -->
+    <style name="TextoSecundarioPequeño">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+</resources>
