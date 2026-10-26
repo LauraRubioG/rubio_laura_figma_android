@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="surface">#FFF6FAFE</color>
+    <color name="primary">#FF1C6586</color>
+    <color name="on_surface">#FF181C1F</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="tertiary_container">#FFE6DEFF</color>
+    <color name="on_surface_variant">#FF41484D</color>
+    <color name="outline">#FFC6C6C6</color>
 </resources>
