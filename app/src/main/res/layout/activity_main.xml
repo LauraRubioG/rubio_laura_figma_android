@@ -1,20 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/surface">
 
     <TextView
+        android:id="@+id/tv_titulo"
+        style="@style/TextoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="59dp"
+        android:text="@string/titulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="215dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="115dp"
+        android:src="@drawable/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_inicio"
+        style="@style/TextoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
+        android:text="@string/iniciar_sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_correo"
+        style="@style/TextoInput"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="400dp"
+        android:hint="@string/hint_correo"
+        android:paddingHorizontal="16dp"
+        android:backgroundTint="@color/outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_contrasena"
+        style="@style/TextoInput"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="472dp"
+        android:hint="@string/hint_contrasena"
+        android:paddingHorizontal="16dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_olvido"
+        style="@style/TextoSecundarioPequeño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="528dp"
+        android:text="@string/olvido_contrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Contenedor de Términos -->
+    <LinearLayout
+        android:id="@+id/ly_terminos"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="568dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/cb_terminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_terminos"
+            style="@style/TextoSecundarioPequeño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terminos" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_entrar"
+        style="@style/TextoBotonPrimario"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="616dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/btn_entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_google"
+        style="@style/TextoBotonSecundario"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="680dp"
+        android:backgroundTint="@color/tertiary_container"
+        android:text="@string/btn_google"
+        app:icon="@drawable/ic_google"
+        app:iconGravity="textStart"
+        app:iconTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Contenedor de Registro -->
+    <LinearLayout
+        android:id="@+id/btn_registro"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="728dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_no_cuenta"
+            style="@style/TextoSecundarioPequeño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_cuenta" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
