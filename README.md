@@ -4,7 +4,7 @@ Este repositorio contiene la implementación nativa en Android de la pantalla de
 
 ## 📌 Enlaces Rápidos
 
-*   🎨 **[Ver Diseño Original en Figma](INSERTA_AQUI_TU_ENLACE_DE_FIGMA)**
+*   🎨 **[Ver Diseño Original en Figma](https://www.figma.com/design/Z7zB8doIT20S0F7ZJQeOlc/T1-%C2%B7-PicoPato-%C2%B7-Laura-Rubio?node-id=33-62&t=ydM9QgFqPOi2LJWG-1)**
 *   📄 **[Leer Memoria Técnica del Proyecto (PDF)](docs/rubio_laura_figma_android.pdf)**
 
 ---
